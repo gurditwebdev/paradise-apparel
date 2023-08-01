@@ -1,4 +1,7 @@
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('{{ 'HelveticaNeue-Medium.eot' | asset_url}}');
@@ -312,4 +315,7 @@ align-items:center;
 .header__inline-menu {
     margin-left: 0;
     empty-cells: ;
+}
+.site-banner-slider .slideshow__text-wrapper.banner__content{
+  @apply px-6 py-[86px];
 }
