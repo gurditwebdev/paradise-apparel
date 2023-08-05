@@ -65,12 +65,20 @@
             "heading": "CONTACT US",
             "menu": "contact-us"
           }
+        },
+        "a22b5bfb-ffec-47ff-bc06-1dfdbc0b6311": {
+          "type": "text",
+          "settings": {
+            "heading": "PAYMENT",
+            "subtext": "<p>Copyright © Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. <\/p>"
+          }
         }
       },
       "block_order": [
         "22de4bc9-aab6-436c-9850-75be4745c1ad",
         "63e657e8-d52f-4482-b93f-82c177a14672",
-        "dfa2ef77-8e98-4e68-b2f6-9ad650119861"
+        "dfa2ef77-8e98-4e68-b2f6-9ad650119861",
+        "a22b5bfb-ffec-47ff-bc06-1dfdbc0b6311"
       ],
       "settings": {
         "color_scheme": "background-1",
