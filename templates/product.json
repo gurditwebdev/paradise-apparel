@@ -31,7 +31,7 @@
           "settings": {
             "heading": "DETAILS",
             "icon": "none",
-            "content": "{{ product.metafields.custom.details | metafield_tag }}",
+            "content": "<p>Paradise Apparel<br\/><br\/>Lorem ipsum dolor sit ametl.<br\/><br\/>- Lorem ipsum dolor sit amet<br\/> - Lorem ipsum dolor sit amet <br\/>- Lorem ipsum dolor sit amet<br\/> - Lorem ipsum dolor sit amet<br\/> - Lorem ipsum dolor sit amet<br\/><br\/>The model is 184 cm and wears a size 48. 100% Cotton <br\/>Made in Lorem ipsum <br\/>Ref. 00000-0000-000-0<\/p>",
             "page": ""
           }
         },
