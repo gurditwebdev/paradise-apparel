@@ -528,3 +528,29 @@ line-height:120%;
 .footer-block__details-content li + li {
     margin-top: 18px;
 }
+.footer-block__details-content.rte p {
+    color: #D0D0D0;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; 
+}
+
+.payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 19px;
+}
+
+.footer-block__details-content.rte {
+    max-width: 340px;
+}
+
+.footer-block:nth-child(4) {flex: 1 !important;}
+
+.footer__blocks-wrapper.flex {
+    gap: 220px;
+    flex-wrap: nowrap;
+}
