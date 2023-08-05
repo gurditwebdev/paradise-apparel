@@ -546,8 +546,20 @@ line-height:120%;
 
 .footer-block__details-content.rte {
     max-width: 340px;
+    margin-right: 0;
+    margin-left: auto;
+}
+.footer-block__heading {
+    max-width: 340px;
+    margin-right: 0;
+    margin-left: auto;
 }
 
+.payment-icons {
+    max-width: 340px;
+    margin-right: 0;
+    margin-left: auto;
+}
 .footer-block:nth-child(4) {flex: 1 !important;}
 
 .footer__blocks-wrapper.flex {
