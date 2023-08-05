@@ -56,5 +56,13 @@ width:100%;
     margin: 0 0 0 1rem;
   }
 }
-
+.right-newsletter .list-social__link {
+    padding: 0;
+}
+.right-newsletter
+.list-social {
+    justify-content: flex-start;
+    margin-top: 16px;
+    gap: 16px;
+}
 
