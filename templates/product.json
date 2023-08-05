@@ -31,7 +31,7 @@
           "settings": {
             "heading": "DETAILS",
             "icon": "none",
-            "content": "",
+            "content": "{{ product.metafields.custom.details | metafield_tag }}",
             "page": ""
           }
         },
