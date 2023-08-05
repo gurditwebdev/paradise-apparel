@@ -42,7 +42,10 @@
       width: 75%;
     }
   {%- endif -%}
-
+.header:not(.drawer-menu).page-width{
+    padding-left: 24px;
+    padding-right: 24px;
+}
   {%- if section.settings.menu_type_desktop != "drawer" -%}
     @media screen and (min-width: 990px) {
       header-drawer {
