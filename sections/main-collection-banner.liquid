@@ -274,3 +274,17 @@ class="hidden"
   ]
 }
 {% endschema %}
+
+<script>
+document.querySelectorAll('.filter-btn').forEach(function (element) {
+  element.addEventListener('click', function () {
+    document.body.classList.add('filter-drawer-open');
+  });
+});
+document.querySelectorAll('.heroicons-solidx-mark').forEach(function (element) {
+  element.addEventListener('click', function () {
+    document.body.classList.remove('filter-drawer-open');
+  });
+});
+
+</script>
