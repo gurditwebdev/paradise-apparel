@@ -519,7 +519,7 @@
 .footer-block__heading {
     margin-bottom: 24px;
 }
-
+.footer-block__details-content li,
 .list-menu__item--link {
     padding: 0;
 line-height:120%;
