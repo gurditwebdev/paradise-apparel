@@ -24,7 +24,7 @@
           {% render block %}
         {%- when 'heading' -%}
           <h2
-            class="display-sm-Medium m-0 p-0  {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="display-sm-Medium m-0 p-0  upcase{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
