@@ -2,6 +2,40 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "d8e8d9ce-a67e-43ec-9229-3aad0bed76e1": {
+      "type": "newsletter",
+      "blocks": {
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP TO THE paradise Apparel. MAILING LIST",
+            "heading_size": "h1"
+          }
+        },
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-paragraph-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Sign up for exclusive early sale access and tailored new arrivals<\/p>"
+          }
+        },
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-email_form-1": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-heading-1",
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-paragraph-1",
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-email_form-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "footer": {
       "type": "footer",
       "settings": {
@@ -21,6 +55,7 @@
     }
   },
   "order": [
+    "d8e8d9ce-a67e-43ec-9229-3aad0bed76e1",
     "footer"
   ]
 }
