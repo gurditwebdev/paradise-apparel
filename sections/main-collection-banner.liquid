@@ -44,7 +44,202 @@
     {%- endif -%}
   </div>
 </div>
+<div class="filter-collections ">
+ <div class="desktop-filter-menu-parent">
+      <div class="desktop-filter-menu">
+        <div class="frame-parent">
+          <div class="filter-parent">
+            <div class="filter">FILTER</div>
+            <img
+              class="heroicons-solidx-mark"
+              alt=""
+              src="https://cdn.shopify.com/s/files/1/0769/8936/6568/files/x-mark.png?v=1686973715"
+            />
+          </div>
+          <div class="frame-wrapper">
+            <div class="frame-container">
+              <div class="frame-container">
+                <div class="frame-group">
+                  <div class="frame-wrapper1">
+                    <div class="line-parent">
+                      <div class="frame-child"></div>
+                      <div class="frame-parent1 active_tab">
+                        <div class="category-wrapper">
+                          <div class="category">CATEGORY</div>
+                        </div>
+                        <img
+                          class="heroicons-solidplus"
+                          alt=""
+                          src="https://cdn.shopify.com/s/files/1/0769/8936/6568/files/plus.png?v=1686973789"
+                        />
+                      </div>
+                      <div class="content">
+{% assign title = collection.title %}
+{% for collection in collections %}
 
+    <div class="frame-container {% if collection.title == title %}collection-filters-apply{% endif %}">
+                          <div class="shoes">
+<a class="decoration-none upcase colorG8" href="{{ collection.url }}">{{ collection.title  }}</a>                            
+                          </div>
+                        </div>
+    
+{% endfor %}
+                    </div>
+                        <div class="frame-item">&nbsp;</div>
+                  </div>
+                  </div>
+                  <div class="frame-wrapper1">
+                    <div class="line-parent">
+                      <div class="frame-child"></div>
+                      <div class="frame-parent1 active_tab">
+                        <div class="category-wrapper">
+                          <div class="category">SORT BY</div>
+                        </div>
+                        <img
+                          class="heroicons-solidplus"
+                          alt=""
+                          src="https://cdn.shopify.com/s/files/1/0769/8936/6568/files/plus.png?v=1686973789"
+                        />
+                      </div>
+                      <div class="content sort-filter-by">
+                        
+                          <facet-filters-form class="hidden facets facets-vertical-sort page-width">
+        <form class="facets-vertical-form" id="FacetSortForm">
+          <div class="facet-filters sorting caption">
+            <div class="facet-filters__field">
+              <h2 class="facet-filters__label caption-large text-body">
+                <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
+              </h2>
+              <div class="select">
+                {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
+                <select
+                  name="sort_by"
+                  class="facet-filters__sort select__select caption-large"
+                  id="SortBy"
+                  aria-describedby="a11y-refresh-page-message"
+                >
+                  {%- for option in collection.sort_options -%}
+                    <option
+                      value="{{ option.value | escape }}"
+                      {% if option.value == sort_by %}
+                        selected="selected"
+                      {% endif %}
+                    >
+                      {{ option.name | escape }}
+                    </option>
+                  {%- endfor -%}
+  <option
+                      value="sold-out"                 
+                    >
+                      HIDE SOLD OUT PRODUCTS
+                    </option>
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+            </div>
+            <noscript>
+              <button type="submit" class="facets__button-no-js button button--secondary">
+                {{ 'products.facets.sort_button' | t }}
+              </button>
+            </noscript>
+          </div>
+        </form>
+      </facet-filters-form>
+   {%- for option in collection.sort_options -%}
+     {% if option.name == 'Featured' %}
+        <div class="frame-container">
+                          <div class="shoes" data-value="manual" data-option="{{ option.name | escape }}">FEATURED </div>
+                        </div>
+{% endif %}
+
+     {% if option.name == 'Date, new to old' %}
+        <div class="frame-container">
+                          <div class="shoes" data-value="created-descending" data-option="{{ option.name | escape }}">NEWEST</div>
+                        </div>
+{% endif %}
+
+
+       {%- endfor -%}
+                          <div class="frame-container">
+                          <div class="shoes" data-value="sold-out" data-option="HIDE SOLD OUT PRODUCTS">HIDE SOLD OUT PRODUCTS</div>
+                        </div>  
+                      </div>
+                       <div class="frame-item">&nbsp;</div>
+                    </div>
+                  </div>
+                  <div class="frame-wrapper1">
+                    <div class="line-parent">
+                      <div class="frame-child"></div>
+                      <div class="frame-parent1 active_tab">
+                        <div class="category-wrapper">
+                          <div class="category">SIZE</div>
+                        </div>
+                        <img
+                          class="heroicons-solidplus"
+                          alt=""
+                          src="https://cdn.shopify.com/s/files/1/0769/8936/6568/files/plus.png?v=1686973789"
+                        />
+                      </div>
+                      <div class="content10">
+                        <form class="filter-form content10">
+
+  {%- for filter in collection.filters -%}
+        {%- case filter.type -%}
+          {%- when 'boolean' or 'list' -%}
+     
+              {%- for filter_value in filter.values -%}
+
+                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                  <input type="checkbox"
+                    name="{{ filter_value.param_name }}"
+                    value="{{ filter_value.value }}"
+                    id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+class="hidden"
+                    {% if filter_value.active -%}checked{%- endif %}
+                    {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                  >
+   <div class="content11">
+                          <div class="shoes">{{ filter_value.label }}</div>
+                        </div>
+</label>
+{% if forloop.index == 1 %}
+<div class="filter_value_count" data-val="{{ filter.active_values.size }}"></div>
+{% endif %}
+              {%- endfor -%}
+
+{%- endcase -%}
+{%- endfor -%}
+
+                        </form>
+
+                      </div>
+                      <div class="frame-item">&nbsp;</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent4">
+          <div class="frame-wrapper4">
+            <div class="frame-wrapper5 justifyCenter apply-filter-here">
+              <div class="apply-filter-wrapper">
+                <div class="apply-filter">APPLY FILTER</div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-wrapper6">
+            <div class="frame-wrapper7 justifyCenter clear-filter-here">
+              <div class="apply-filter-wrapper ">
+                <div class="apply-filter">CLEAR FILTERS (<span>0</span>)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",
