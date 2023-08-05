@@ -41,7 +41,7 @@
             "heading": "SIZE",
             "icon": "none",
             "content": "",
-            "page": ""
+            "page": "size"
           }
         },
         "0dfaf563-c24e-4a07-a46e-dd5f2284ebd8": {
@@ -50,7 +50,7 @@
             "heading": "DELIVERY AND RETURNS",
             "icon": "none",
             "content": "",
-            "page": ""
+            "page": "delivery-and-returns"
           }
         }
       },
