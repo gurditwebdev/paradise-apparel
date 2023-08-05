@@ -9,7 +9,14 @@
     padding-left: 9rem;
   } */
 }
+.right-newsletter {
+    max-width: 455px;
+}
 
+.left-newsletter {
+    max-width: 450px;
+    text-align: left;
+}
 .newsletter__wrapper > * {
   margin-top: 0;
   margin-bottom: 0;
