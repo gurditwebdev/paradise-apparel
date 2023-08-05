@@ -11,7 +11,6 @@
 <input type="hidden" value="https://indigo-studio-development.myshopify.com/collections/all" class="collections-filter" data-sort="" data-size="" data-all-size="">
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-<div class="page-width">
 <div class="filter-and-heading d-flex alignCenter justifySB">
  <h1 class="collection-hero__title  upcase colorB display-xs-Regular pt-16 pb-16 m0">
         {{- collection.title | escape -}}
@@ -22,8 +21,6 @@ FILTER
 
 </div>
 
-
-</div>
 
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
