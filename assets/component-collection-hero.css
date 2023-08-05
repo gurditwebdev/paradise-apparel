@@ -91,6 +91,24 @@ div.content10 {
   }
 }
 
+aside#main-collection-filters {
+    display: none;
+}
+
+ul#product-grid {
+    grid-template-columns: repeat(4,1fr);
+    gap: 48px 24px;
+}
+
+ul#product-grid > li {
+    max-width: 100%;
+    width: 100%;
+    width: 100%;
+}
+
+.filter-and-heading {
+    width: 100%;
+}
 
 
 .collection-hero__title + .collection-hero__description {
