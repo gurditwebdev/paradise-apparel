@@ -1,6 +1,3 @@
-*{
-  letter-spacing:0;
-}
 @font-face {
     font-family: 'Helvetica Neue';
     src: url('{{ 'HelveticaNeue-Medium.eot' | asset_url}}');
@@ -56,6 +53,7 @@
 *{
         font-family: 'Helvetica Neue';
 font-size: 12px;
+ letter-spacing:0;
 }
 .customer button {
     height: 41px;
@@ -293,6 +291,16 @@ align-items:center;
 .justifyCenter{
    justify-content:center;
 }
+
+.right-newsletter {
+    max-width: 455px;
+}
+
+.left-newsletter {
+    max-width: 450px;
+    text-align: left;
+}
+
 .header:not(.header--top-center) *>.header__search {
     display: none;
 }
@@ -306,6 +314,8 @@ align-items:center;
     height: 2.4rem;
     width: 2.4rem;
 }
+
+
 .header__inline-menu {
     margin-left: 0;
 }
