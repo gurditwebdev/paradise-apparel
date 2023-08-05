@@ -1,0 +1,371 @@
+<style>
+.popup-body {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:999;
+}
+.popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.popup-inner {
+  transition: 0.5s;
+  padding: 0px;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  max-width: 757px;
+  border-radius: 0;
+      box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.25);
+}
+.close-btn {
+  position: absolute;
+  right: 24px;
+  top: 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+  .close-btn svg {
+    display: block;
+}
+.pop-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #070707;
+  opacity: 0.5;
+}
+
+.popup_open {
+  display: inline-block;
+  padding: 11px 30px;
+  background-color: #000;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.popup_heading {
+  margin-bottom: 20px;
+}
+.link_container {
+  margin-top: 20px;
+}
+.newsletter-wrapper-main img{
+  display:block;
+}
+.newsletter--wrapper{
+  padding:24px;
+}
+
+  @media only screen and (max-width:768px){
+.newsletter-wrapper-main {
+    display: block;
+}
+
+.popup-inner {
+    max-width: 340px;
+}
+
+.newsletter-wrapper-main img {
+    max-width: 100%;
+}
+
+.newsletter--wrapper {
+    padding: 40px 33px 45px 29px;
+}
+
+html  .newsletter__subheading {
+    margin-top: 24px;
+}
+.newsletter-wrapper-main 
+button#Subscribe {
+    border: 0;
+}
+
+.close-btn {
+    top: 24px;
+    right: 12px;
+}
+
+.close-btn svg path {
+    fill: #fff;
+}
+.newsletter-wrapper-main 
+.newsletter-form {
+    margin-top: 24px;
+}
+}
+</style>
+<!----Popup---->
+<div class="popup-body">
+  <div class="popup-container">
+
+    <div class="popup-inner">
+      <span class="fa fa-close close-btn"><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.96967 5.47358C6.26256 5.18068 6.73744 5.18068 7.03033 5.47358L12.5 10.9432L17.9697 5.47358C18.2626 5.18068 18.7374 5.18068 19.0303 5.47358C19.3232 5.76647 19.3232 6.24134 19.0303 6.53424L13.5607 12.0039L19.0303 17.4736C19.3232 17.7665 19.3232 18.2413 19.0303 18.5342C18.7374 18.8271 18.2626 18.8271 17.9697 18.5342L12.5 13.0646L7.03033 18.5342C6.73744 18.8271 6.26256 18.8271 5.96967 18.5342C5.67678 18.2413 5.67678 17.7665 5.96967 17.4736L11.4393 12.0039L5.96967 6.53424C5.67678 6.24134 5.67678 5.76647 5.96967 5.47358Z" fill="#070707"/>
+</svg>
+</span>
+ <div class="newsletter-wrapper-main d-flex alignCenter">
+<div>
+<img src="{{ section.settings.image | img_url:"master" }}"/>
+</div>
+   <div class="newsletter--wrapper">
+  {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- when 'heading' -%}
+          <h2 class="inline-richtext m0 colorB display-md-Medium {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            {{ block.settings.heading }}
+          </h2>
+        {%- when 'paragraph' -%}
+          <div class="newsletter__subheading mt-24 m0 colorG8 display-xs-Regular" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+        {%- when 'email_form' -%}
+         <div {{ block.shopify_attributes }}>
+              {% form 'customer', class: 'newsletter-form' %}
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <div class="newsletter-form__field-wrapper">
+                  <div class="field-set">
+                    <input
+                      id="NewsletterForm--{{ section.id }}"
+                      type="email"
+                      name="contact[email]"
+                      class="field__input p0 pb-8 colorW display-xs-Regular"
+                      value="{{ form.email }}"
+                      aria-required="true"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      autocomplete="email"
+                      {% if form.errors %}
+                        autofocus
+                        aria-invalid="true"
+                        aria-describedby="Newsletter-error--{{ section.id }}"
+                      {% elsif form.posted_successfully? %}
+                        aria-describedby="Newsletter-success--{{ section.id }}"
+                      {% endif %}
+                      placeholder="{{ 'newsletter.label' | t }}"
+                      required
+                    >
+                    <label class="field__label colorB display-xs-Regular" for="NewsletterForm--{{ section.id }}">
+                     {% render 'icon-@' %} {{ 'newsletter.label' | t }}
+                    </label>
+                    <button
+                      type="submit"
+                      class="newsletter-form__button display-xs-Medium bG-B upcase colorW"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                    >
+                 Subscribe
+                    </button>
+                  </div>
+                  {%- if form.errors -%}
+                    <small class="newsletter-form__message display-xs-Medium upcase colorW form__message" id="Newsletter-error--{{ section.id }}">
+                      {%- render 'icon-error' -%}
+                      {{- form.errors.translated_fields.email | capitalize }}
+                      {{ form.errors.messages.email -}}
+                    </small>
+                  {%- endif -%}
+                </div>
+                {%- if form.posted_successfully? -%}
+                  <h3
+                    class="newsletter-form__message display-xs-Medium upcase colorW newsletter-form__message--success form__message"
+                    id="Newsletter-success--{{ section.id }}"
+                    tabindex="-1"
+                    autofocus
+                  >
+                    {% render 'icon-success' -%}
+                    {{- 'newsletter.success' | t }}
+                  </h3>
+                {%- endif -%}
+              {% endform %}
+            </div>
+      {%- endcase -%}
+    {%- endfor -%}
+     
+   </div>
+   
+ </div>
+    </div>
+  </div>
+  <div class="pop-overlay">&nbsp;</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Newsletter popup",
+    "settings": [
+{
+  "id":"image",
+  "type":"image_picker",
+  "label":"Image"
+}
+],
+      "blocks": [
+    {
+      "type": "heading",
+      "name": "t:sections.newsletter.blocks.heading.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Subscribe to our emails",
+          "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "t:sections.newsletter.blocks.paragraph.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
+          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
+        }
+      ]
+    },
+    {
+      "type": "email_form",
+      "name": "t:sections.newsletter.blocks.email_form.name",
+      "limit": 1
+    },
+    {
+      "type": "@app"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<script>
+
+function getCookie(name) {
+  var cookieString = document.cookie;
+  var cookies = cookieString.split("; ");
+
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[i].split("=");
+    var cookieName = decodeURIComponent(cookie[0]);
+
+    if (cookieName === name) {
+      var cookieValue = decodeURIComponent(cookie[1]);
+      return cookieValue;
+    }
+  }
+
+  return null;
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var popupBody = document.querySelector(".popup-body");
+var popupClosed = getCookie("popupClosed");
+  if (popupClosed === "true") {
+
+  }
+  else{
+  fadeIn(popupBody);
+  }
+  var closeBtn = document.querySelector(".close-btn");
+  var popOverlay = document.querySelector(".pop-overlay");
+
+  closeBtn.addEventListener("click", function() {
+    fadeOut(popupBody);
+    setCookie("popupClosed", "true", 365); // Set a cookie named "popupClosed" with a value of "true" and an expiration of 1 day
+  });
+
+  popOverlay.addEventListener("click", function() {
+    fadeOut(popupBody);
+    setCookie("popupClosed", "true", 365); // Set a cookie named "popupClosed" with a value of "true" and an expiration of 1 day
+  });
+});
+
+function fadeIn(element) {
+  element.style.display = "block";
+  element.style.opacity = 0;
+
+  var duration = 300; // 300 milliseconds
+  var start = performance.now();
+
+  requestAnimationFrame(function fadeInAnimation(timestamp) {
+    var elapsed = timestamp - start;
+    var progress = elapsed / duration;
+
+    element.style.opacity = Math.min(progress, 1);
+
+    if (progress < 1) {
+      requestAnimationFrame(fadeInAnimation);
+    }
+  });
+}
+
+function fadeOut(element) {
+  var duration = 300; // 300 milliseconds
+  var start = performance.now();
+  var initialOpacity = parseFloat(getComputedStyle(element).opacity);
+
+  requestAnimationFrame(function fadeOutAnimation(timestamp) {
+    var elapsed = timestamp - start;
+    var progress = elapsed / duration;
+
+    element.style.opacity = Math.max(initialOpacity - progress, 0);
+
+    if (progress < 1) {
+      requestAnimationFrame(fadeOutAnimation);
+    } else {
+      element.style.display = "none";
+    }
+  });
+}
+
+function setCookie(name, value, days) {
+  var expirationDate = new Date();
+  expirationDate.setTime(expirationDate.getTime() + days * 24 * 60 * 60 * 1000);
+  var expires = "expires=" + expirationDate.toUTCString();
+  document.cookie = name + "=" + encodeURIComponent(value) + "; " + expires + "; path=/";
+}
+
+
+</script>
