@@ -515,3 +515,15 @@
     }
   }
 }
+
+.footer-block__heading {
+    margin-bottom: 24px;
+}
+
+.list-menu__item--link {
+    padding: 0;
+}
+
+.footer-block__details-content li + li {
+    margin-top: 18px;
+}
