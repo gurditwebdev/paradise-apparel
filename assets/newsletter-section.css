@@ -56,3 +56,53 @@ width:100%;
     margin: 0 0 0 1rem;
   }
 }
+
+.newsletter-form {
+    max-width: 100%;
+}
+
+.newsletter__wrapper .newsletter-form__field-wrapper {
+    max-width: 100%;
+}
+
+.newsletter-form__field-wrapper .field__input {
+    max-width: 340px;
+    background: transparent;
+    border-bottom: 1px solid #4D4D4D;
+    height: 41px;
+}
+
+.field:before,.field:after {
+    opacity: 0;
+}
+
+.newsletter-form__button svg {
+    display: none;
+}
+
+.newsletter-form__button:not(:focus-visible):not(.focused),.newsletter-form__button {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 13.2px */
+    text-transform: uppercase;
+    color: #fff;
+    padding: 14px 24px;
+    background: #D0D0D0;
+    width: auto;
+    margin: 0;
+    min-height: auto;
+    height: 41px;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.newsletter-form__button::before {
+    content: "Sign up";
+}
+
+.field__label {
+    top: 0;
+    left: 0;
+    color: #070707;
+}
