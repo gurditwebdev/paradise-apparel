@@ -44,6 +44,34 @@
     },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "22de4bc9-aab6-436c-9850-75be4745c1ad": {
+          "type": "link_list",
+          "settings": {
+            "heading": "BRAND",
+            "menu": "brand"
+          }
+        },
+        "63e657e8-d52f-4482-b93f-82c177a14672": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SUPPORT",
+            "menu": "support"
+          }
+        },
+        "dfa2ef77-8e98-4e68-b2f6-9ad650119861": {
+          "type": "link_list",
+          "settings": {
+            "heading": "CONTACT US",
+            "menu": "contact-us"
+          }
+        }
+      },
+      "block_order": [
+        "22de4bc9-aab6-436c-9850-75be4745c1ad",
+        "63e657e8-d52f-4482-b93f-82c177a14672",
+        "dfa2ef77-8e98-4e68-b2f6-9ad650119861"
+      ],
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": false,
@@ -54,9 +82,9 @@
         "enable_language_selector": false,
         "payment_enable": false,
         "show_policy": false,
-        "margin_top": 36,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "margin_top": 0,
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     }
   },
