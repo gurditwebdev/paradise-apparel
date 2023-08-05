@@ -1,12 +1,5 @@
 <ul class="footer__list-social list-unstyled list-social">
-  {%- if settings.social_facebook_link != blank -%}
-    <li class="list-social__item">
-      <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
-        {%- render 'icon-facebook' -%}
-        <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-      </a>
-    </li>
-  {%- endif -%}
+
   {%- if settings.social_instagram_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_instagram_link }}" class="link list-social__link" >
@@ -36,6 +29,17 @@
       <a href="{{ settings.social_twitter_link }}" class="link list-social__link" >
         {%- render 'icon-twitter' -%}
         <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+      </a>
+    </li>
+  {%- endif -%}
+  {%- if settings.social_facebook_link != blank -%}
+    <li class="list-social__item">
+      <a href="{{ settings.social_facebook_link }}" class="link list-social__link" >
+     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9169 2.52015C11.4831 2.73707 10.9938 2.84323 10.5092 2.89861C10.9985 2.57553 11.3769 2.14169 11.5938 1.54169C11.1046 1.81861 10.6246 2.03092 10.0246 2.14169C9.59077 1.65246 8.94 1.38477 8.23846 1.38477C6.88154 1.38477 5.80154 2.46938 5.80154 3.82169C5.80154 4.03861 5.80154 4.20015 5.85692 4.36169C3.79385 4.25554 2.00308 3.28169 0.812308 1.82323C0.595385 2.20169 0.489231 2.58015 0.489231 3.06938C0.489231 3.93707 0.923077 4.63861 1.57385 5.12784C1.18842 5.12905 0.811176 5.01668 0.489231 4.80477V4.86015C0.489231 6.05092 1.35692 7.02938 2.44154 7.2463C2.22462 7.2463 2.00769 7.30169 1.79538 7.30169C1.63385 7.30169 1.47231 7.30169 1.36154 7.2463C1.63846 8.21553 2.55231 8.9263 3.63692 8.9263C2.76923 9.63246 1.74462 10.0109 0.6 10.0109C0.383077 10.0109 0.221538 10.0109 0 9.95553C1.08 10.6478 2.38154 11.0263 3.73385 11.0263C8.23385 11.0263 10.6708 7.28784 10.6708 4.08938V3.7663C11.163 3.43563 11.5862 3.01239 11.9169 2.52015Z" fill="#070707"/>
+</svg>
+
+        <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
       </a>
     </li>
   {%- endif -%}
