@@ -1167,3 +1167,102 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+$(".menu-drawer__navigation button").click(function () {
+    $(".header__icon--menu").trigger('click');
+})
+$(".filter-collections").click(function () {
+
+$("body").removeClass("filter-drawer-open");
+})
+$(".desktop-filter-menu").click(function (event) {
+   event.stopPropagation();
+})
+//&filter.v.option.size=XS&sort_by=manual
+
+$(".content a").click(function(e){
+    e.preventDefault();
+  let _this = $(this);
+    $(this).parent('.shoes').parent('.frame-container').addClass('active-filter');
+    $(this).parent('.shoes').parent('.frame-container').siblings().removeClass('active-filter');
+    let val = $(".collections-filter").val();
+  if(val.includes('collections')){
+   let  allVal = _this.attr('href');
+    $(".collections-filter").val(allVal)  
+
+}
+
+});
+
+$(".content.sort-filter-by .shoes").click(function(e){
+    e.preventDefault();
+let the_url = window.location.href;
+  $(this).parent().addClass('active-filter');
+  $(this).parent().siblings().removeClass('active-filter');
+    $(".collections-filter").attr("data-sort",$(this).attr('data-value'));
+
+});
+$(".filter-form .shoes").click(function(e){
+    e.preventDefault();
+  $(this).parent().parent().addClass('active-filter');
+
+let d = $(".collections-filter").attr("data-size") + '&filter.v.option.size=' + $(this).parents('label').find('input').val();
+$(".collections-filter").attr("data-size",d);
+let dd = $(this).parents('label').find('input').val();
+if($(".collections-filter").attr("data-all-size") != ''){
+ dd = $(".collections-filter").attr("data-all-size") + ',' +  $(this).parents('label').find('input').val();
+}
+
+$(".collections-filter").attr("data-all-size",dd);
+
+});
+$(".clear-filter-here").click(function(e){
+let val = $(".collections-filter").val();
+   window.location.href = val;
+});
+
+
+$(document).ready(function(){
+let url = window.location.href;
+if(url.includes('sold-out')){
+$('body').addClass('sold-out-filter-enabled');
+}
+if(url.includes('sizes')){
+let size = url.split('sizes=(');
+    let sizeVal = size[1].split(')');
+let allSizes = sizeVal[0].split(',');
+$(".collections-filter").attr("data-all-size",sizeVal[0]);
+allSizes.forEach(function(e){
+    let sv1 = e.replace('%20',' ');
+$(`.hidden[value="${sv1}"]`).parent('label').addClass('active-filter');
+
+});
+if(sizeVal[1].includes('&sort_by')){
+      let sizesVal = sizeVal[1].split('&sort_by');
+$(".collections-filter").attr("data-size",sizesVal[0]);
+} 
+  else{
+$(".collections-filter").attr("data-size",sizeVal[1]);
+  }
+
+
+
+ 
+}
+
+if(url.includes('coll=true')){
+$(".collection-filters-apply").addClass('active-filter')
+}
+if(url.includes('sort_by')){
+let size = url.split('sort_by=');
+$(".collections-filter").attr("data-sort",size[1]);
+console.log(size[1]);
+$(`[data-value="${size[1]}"]`).parent('.frame-container').addClass('active-filter');
+
+  
+}
+let len = $(".active-filter").length;
+$(".apply-filter span").text(len);
+
+});
