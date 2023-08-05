@@ -566,3 +566,10 @@ line-height:120%;
     gap: 220px;
     flex-wrap: nowrap;
 }
+.footer__content-top.page-width {
+    padding-bottom: 0;
+}
+
+.footer__content-bottom {
+    display: none;
+}
