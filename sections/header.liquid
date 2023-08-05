@@ -36,7 +36,81 @@
     margin-left: -1.2rem;
   }
 
+.mega-menu__content {
+    background: #FAFAFA;
+    padding-bottom: 16px;
+    box-shadow: none;
+    border: 0;
+}
 
+ul.mega-menu__list.page-width > li:nth-child(1) a {
+    font-family: Helvetica Neue;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 24px */
+    text-transform: uppercase;
+    padding: 0;
+}
+
+ul.mega-menu__list.page-width > li:nth-child(2) a {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 13.2px */
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.mega-menu__link--level-2:not(:only-child) {
+    margin-bottom: 0;
+}
+
+.mega-menu__link--level-2 {
+    padding: 0;
+    margin: 0;
+}
+
+a#HeaderMenu-shop-all-all-products-best-sellers {}
+
+ul.mega-menu__list.page-width > li:nth-child(2) > a {
+    margin-bottom: 12px;
+}
+
+ul.mega-menu__list.page-width > li:nth-child(2) > ul > li +li {
+    margin-top: 12px;
+}
+
+ul.mega-menu__list.page-width > li > a {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    text-transform: uppercase;
+  margin-bottom: 12px;
+}
+ul.mega-menu__list.page-width > li > ul > li a{font-family: Helvetica Neue;font-size: 12px;font-style: normal;font-weight: 400;line-height: 120%;text-transform: uppercase;padding: 0;margin: 0;}
+
+ul.mega-menu__list.page-width > li > ul > li + li {
+    margin-top: 12px;
+}
+
+.mega-menu__list {
+    display: flex;
+    gap: 96px;
+}
+
+summary .icon-caret {
+    display: none;
+}
+
+details[open]>.header__menu-item {
+    color: #070707;
+    text-decoration: none;
+    font-weight: 500;
+}
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
