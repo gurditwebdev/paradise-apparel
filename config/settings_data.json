@@ -132,6 +132,31 @@
       },
       "newsletter-popup": {
         "type": "newsletter-popup",
+        "blocks": {
+          "982ea823-4b5d-447a-b37d-489395bba3a5": {
+            "type": "heading",
+            "settings": {
+              "heading": "GET ALERTED",
+              "heading_size": "h1"
+            }
+          },
+          "576d1745-47f0-4d2d-9447-3391085af77c": {
+            "type": "paragraph",
+            "settings": {
+              "text": "<p>Subscribe to our Newsletter to receive alerts about information on our latest news, promotions and newest product arrivals.<\/p>"
+            }
+          },
+          "0539b706-354d-46cb-9d91-2dbf9c6a313b": {
+            "type": "email_form",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "982ea823-4b5d-447a-b37d-489395bba3a5",
+          "576d1745-47f0-4d2d-9447-3391085af77c",
+          "0539b706-354d-46cb-9d91-2dbf9c6a313b"
+        ],
         "settings": {
           "image": "shopify:\/\/shop_images\/image_5.png"
         }
