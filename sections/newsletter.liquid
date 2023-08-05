@@ -43,6 +43,13 @@
           >
             {{ block.settings.text }}
           </div>
+      
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+<div class="right-newsletter">
+   {%- for block in section.blocks -%}
+      {%- case block.type -%}    
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
@@ -111,9 +118,6 @@
           </div>
       {%- endcase -%}
     {%- endfor -%}
-  </div>
-<div class="right-newsletter">
-
 </div>
 </div>
 
