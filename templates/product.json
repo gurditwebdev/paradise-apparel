@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -23,42 +16,52 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
+            "picker_type": "dropdown"
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         },
-        "description": {
-          "type": "description",
+        "100b6ef9-c14d-4e11-86f3-8fe84dce6e1a": {
+          "type": "collapsible_tab",
           "settings": {
+            "heading": "DETAILS",
+            "icon": "none",
+            "content": "",
+            "page": ""
           }
         },
-        "share": {
-          "type": "share",
+        "e831f7bb-cb71-4f53-8410-22d531b67f22": {
+          "type": "collapsible_tab",
           "settings": {
-            "share_label": "Share"
+            "heading": "SIZE",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "0dfaf563-c24e-4a07-a46e-dd5f2284ebd8": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "DELIVERY AND RETURNS",
+            "icon": "none",
+            "content": "",
+            "page": ""
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
-        "description",
-        "share"
+        "100b6ef9-c14d-4e11-86f3-8fe84dce6e1a",
+        "e831f7bb-cb71-4f53-8410-22d531b67f22",
+        "0dfaf563-c24e-4a07-a46e-dd5f2284ebd8"
       ],
       "settings": {
         "enable_sticky_info": true,
