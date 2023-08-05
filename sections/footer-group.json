@@ -81,6 +81,7 @@
         "a22b5bfb-ffec-47ff-bc06-1dfdbc0b6311"
       ],
       "settings": {
+        "menu": "footer-1",
         "color_scheme": "background-1",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
