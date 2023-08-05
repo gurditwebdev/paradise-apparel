@@ -22,12 +22,18 @@
           "type": "email_form",
           "settings": {
           }
+        },
+        "a0ce37e7-05dd-41be-be14-8b25444af3e6": {
+          "type": "social-media",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-heading-1",
         "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-paragraph-1",
-        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-email_form-1"
+        "sections--20059544060193__d8e8d9ce-a67e-43ec-9229-3aad0bed76e1-email_form-1",
+        "a0ce37e7-05dd-41be-be14-8b25444af3e6"
       ],
       "settings": {
         "color_scheme": "scheme-84901c81-faec-4811-b97a-164fd0079066",
