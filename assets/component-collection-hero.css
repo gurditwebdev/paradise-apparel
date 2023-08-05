@@ -109,7 +109,9 @@ ul#product-grid > li {
 .filter-and-heading {
     width: 100%;
 }
-
+button.filter-btn {
+    margin-top: 40px;
+}
 
 .collection-hero__title + .collection-hero__description {
   margin-top: 1.5rem;
