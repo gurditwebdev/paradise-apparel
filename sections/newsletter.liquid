@@ -16,7 +16,7 @@
 {%- endstyle -%}
 
 <div class="newsletter mt-[105px] center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div class="newsletter__wrapper flex justify-between px-[24px] color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+  <div class="newsletter__wrapper flex items-center justify-between px-[24px] color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
 <div class="left-newsletter">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
