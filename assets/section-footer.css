@@ -522,6 +522,7 @@
 
 .list-menu__item--link {
     padding: 0;
+line-height:120%;
 }
 
 .footer-block__details-content li + li {
