@@ -158,7 +158,7 @@ button#Subscribe {
                       required
                     >
                     <label class="field__label colorB display-xs-Regular" for="NewsletterForm--{{ section.id }}">
-                     {% render 'icon-@' %} {{ 'newsletter.label' | t }}
+           {{ 'newsletter.label' | t }}
                     </label>
                     <button
                       type="submit"
@@ -167,7 +167,7 @@ button#Subscribe {
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
                     >
-                 Subscribe
+                 Sign up
                     </button>
                   </div>
                   {%- if form.errors -%}
