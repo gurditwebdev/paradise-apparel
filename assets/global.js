@@ -1346,3 +1346,6 @@ $(".apply-filter span").text(len);
 
 });
 
+if(window.location.href.includes('policies')){
+  $('body').addClass('policies-template');
+}
