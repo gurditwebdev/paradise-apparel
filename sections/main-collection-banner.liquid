@@ -84,7 +84,53 @@ FILTER
                         <div class="frame-item">&nbsp;</div>
                   </div>
                   </div>
+                
                   <div class="frame-wrapper1">
+                    <div class="line-parent">
+                      <div class="frame-child"></div>
+                      <div class="frame-parent1 active_tab">
+                        <div class="category-wrapper">
+                          <div class="category">SIZE</div>
+                        </div>
+             <span class="heroicons-solidplus"></span>  
+                      </div>
+                      <div class="content10">
+                        <form class="filter-form content10">
+
+  {%- for filter in collection.filters -%}
+        {%- case filter.type -%}
+          {%- when 'boolean' or 'list' -%}
+     
+              {%- for filter_value in filter.values -%}
+
+                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                  <input type="checkbox"
+                    name="{{ filter_value.param_name }}"
+                    value="{{ filter_value.value }}"
+                    id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+class="hidden"
+                    {% if filter_value.active -%}checked{%- endif %}
+                    {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
+                  >
+   <div class="content11">
+                          <div class="shoes">{{ filter_value.label }}</div>
+                        </div>
+</label>
+{% if forloop.index == 1 %}
+<div class="filter_value_count" data-val="{{ filter.active_values.size }}"></div>
+{% endif %}
+              {%- endfor -%}
+
+{%- endcase -%}
+{%- endfor -%}
+
+                        </form>
+
+                      </div>
+                      <div class="frame-item">&nbsp;</div>
+                    </div>
+                  </div>
+  <div class="frame-wrapper1">
                     <div class="line-parent">
                       <div class="frame-child"></div>
                       <div class="frame-parent1 active_tab">
@@ -157,51 +203,6 @@ FILTER
                         </div>  
                       </div>
                        <div class="frame-item">&nbsp;</div>
-                    </div>
-                  </div>
-                  <div class="frame-wrapper1">
-                    <div class="line-parent">
-                      <div class="frame-child"></div>
-                      <div class="frame-parent1 active_tab">
-                        <div class="category-wrapper">
-                          <div class="category">SIZE</div>
-                        </div>
-             <span class="heroicons-solidplus"></span>  
-                      </div>
-                      <div class="content10">
-                        <form class="filter-form content10">
-
-  {%- for filter in collection.filters -%}
-        {%- case filter.type -%}
-          {%- when 'boolean' or 'list' -%}
-     
-              {%- for filter_value in filter.values -%}
-
-                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
-                  <input type="checkbox"
-                    name="{{ filter_value.param_name }}"
-                    value="{{ filter_value.value }}"
-                    id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
-class="hidden"
-                    {% if filter_value.active -%}checked{%- endif %}
-                    {% if filter_value.count == 0 and filter_value.active == false -%}disabled{%- endif %}
-                  >
-   <div class="content11">
-                          <div class="shoes">{{ filter_value.label }}</div>
-                        </div>
-</label>
-{% if forloop.index == 1 %}
-<div class="filter_value_count" data-val="{{ filter.active_values.size }}"></div>
-{% endif %}
-              {%- endfor -%}
-
-{%- endcase -%}
-{%- endfor -%}
-
-                        </form>
-
-                      </div>
-                      <div class="frame-item">&nbsp;</div>
                     </div>
                   </div>
                 </div>
