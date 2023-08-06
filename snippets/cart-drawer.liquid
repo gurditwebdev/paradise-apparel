@@ -351,10 +351,10 @@
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
-<div>BAG<span>{{ cart.item_count  }} items</span></div> <div>SUBTOTAL<span>{{ cart.total_price | money_with_currency }}</span></div>
+     <div class="drawer__footer-wrapper"><div>BAG<span>{{ cart.item_count  }} items</span></div> <div>SUBTOTAL<span>{{ cart.total_price | money_with_currency }}</span></div>
 
 
-
+     </div>
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
             <summary>
