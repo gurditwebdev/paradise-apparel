@@ -268,7 +268,7 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "shopping bag",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "subtotal": "Subtotal",
@@ -480,6 +480,13 @@
   "customer_accounts": {
     "order_details": {
       "log_in": "LOGIN"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "throttle": {
+        "cart_summary_heading": "shopping bag"
+      }
     }
   }
 }
