@@ -468,4 +468,5 @@ button#CartDrawer-Checkout {
 .drawer__footer-wrapper {
     display: flex;
     justify-content: space-between;
+  margin-bottom:24px;
 }
