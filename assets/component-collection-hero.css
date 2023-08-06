@@ -273,6 +273,7 @@ button.filter-btn {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+cursor:pointer;
 }
 .shoes {
   align-self: stretch;
