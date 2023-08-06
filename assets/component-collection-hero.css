@@ -50,7 +50,7 @@ div.content10 {
 .content {max-height: 16vh;overflow: auto;}
 
 .desktop-filter-menu {
-    max-height: calc(100vh - 88px);
+    max-height: 100vh;
     overflow: auto;
 }
 .collection-hero__inner {
