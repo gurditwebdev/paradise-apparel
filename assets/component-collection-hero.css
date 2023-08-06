@@ -433,10 +433,10 @@ button.filter-btn {
   position: absolute;
   top: 0;
   right: 0;
-  background-color: var(--monotones-off-white);
+  background-color: #fff;
   width: 100%;
   max-width:425px;
-  padding: 43px 66px;
+  padding: 44px 24px;
   box-sizing: border-box;
 gap:20px;
 }
