@@ -440,3 +440,26 @@ button#CartDrawer-Checkout {
 }
 
 .drawer__footer {border: 0;}
+.drawer__footer div {
+    color: #070707;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 13.2px */
+    text-transform: uppercase;
+}
+
+.drawer__footer div span {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: none;
+    color: #7d7d7d;
+}
+
+.cart-drawer__footer {
+    display: none;
+}
