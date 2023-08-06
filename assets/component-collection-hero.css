@@ -550,3 +550,29 @@ input:checked + .content11 .shoes:before,
     position: relative;
     background: #070707;
 }
+span.heroicons-solidplus::before {
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: #070707;
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+    left: 5px;
+}
+span.heroicons-solidplus::after {
+    content: "";
+    width: 11px;
+    height: 1px;
+    background: #070707;
+    position: absolute;
+    border-radius: 5px;
+    top: 5px;
+}
+.active_tab span.heroicons-solidplus::before{
+    opacity:0;
+}
+.heroicons-solidplus {
+    width: 13px;
+    height: 13px;
+}
