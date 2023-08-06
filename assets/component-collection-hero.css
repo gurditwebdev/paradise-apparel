@@ -240,7 +240,6 @@ button.filter-btn {
   flex-direction: row;
   align-items: flex-end;
   justify-content:space-between;
-  gap: 304px;
 }
 .frame-child {
   align-self: stretch;
