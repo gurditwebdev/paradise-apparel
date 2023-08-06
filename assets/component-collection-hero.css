@@ -62,7 +62,49 @@ div.content10 {
   margin-bottom: 0;
   padding-bottom: 2rem;
 }
+.filter {
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+}
 
+.filter-parent {
+    gap: 50px;
+}
+.sort-filter-by  .shoes::before ,
+.content11 .shoes::before, 
+.shoes a::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border: 1px solid #D9D9D9;
+    display: block;
+    top: -1px;
+    position: relative;
+}
+.sort-filter-by  .shoes ,
+.content11 .shoes ,
+.shoes a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 14.4px */
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+
+
+.content {
+    padding: 5px 0;
+}
 @media screen and (min-width: 750px) {
   .collection-hero.collection-hero--with-image {
     padding: calc(4rem + var(--page-width-margin)) 0
