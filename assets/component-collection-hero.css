@@ -446,7 +446,7 @@ gap:20px;
 .desktop-filter-menu-parent {
   position: relative;
   width: 100%;
-  height: calc(100vh - 88px);
+  height: 100vh;
   text-align: left;
   font-size: var(--display-sm-medium-allcaps-size);
   color: var(--monotones-black);
@@ -455,7 +455,7 @@ gap:20px;
 
 .filter-collections {
     position: fixed;
-    top: 88px;
+    top: 0;
     width: 100%;
     background: rgb(7 7 7 / 50%);
     z-index: 98;
