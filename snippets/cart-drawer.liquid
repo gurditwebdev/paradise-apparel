@@ -351,7 +351,7 @@
         </form>
       </cart-drawer-items>
       <div class="drawer__footer">
-<div>BAG<span>3 items</span></div> <div>SUBTOTAL<span></span></div>
+<div>BAG<span>{{ cart.item_count  }} items</span></div> <div>SUBTOTAL<span>{{ cart.total_price | money_with_currency }}</span></div>
 
 
 
