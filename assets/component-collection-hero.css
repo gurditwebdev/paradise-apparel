@@ -530,7 +530,13 @@ gap:20px;
 .active_tab img {
     transform: rotate(45deg);
 }
-
+.active-filter .shoes a,
+.active-filter .content11 .shoes,
+.sort-filter-by .active-filter .shoes{
+  text-decoration-line: underline;
+text-transform: uppercase;
+color:#070707;
+}
 .active-filter .shoes a:before,
 .active-filter .content11 .shoes:before ,
 input:checked + .content11 .shoes:before,
