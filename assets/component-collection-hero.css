@@ -434,7 +434,8 @@ button.filter-btn {
   top: 0;
   right: 0;
   background-color: var(--monotones-off-white);
-  width: 513px;
+  width: 100%;
+  max-width:425px;
   padding: 43px 66px;
   box-sizing: border-box;
 gap:20px;
