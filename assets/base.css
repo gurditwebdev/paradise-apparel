@@ -3856,7 +3856,9 @@ html .collection__view-all a:not(.link) {
     margin: 0;
 }
 html
-.header__heading {
+.header__heading,
+html header__heading-link 
+ {
     flex: 1;
     text-align: left;
 }
