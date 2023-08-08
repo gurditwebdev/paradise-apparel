@@ -32,7 +32,7 @@
       </script>
     </variant-radios>
   {%- else -%}
-{% if option.name == 'Color' %}
+{% if option.name == 'Color' or option.name == 'color' %}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
