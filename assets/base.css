@@ -3928,7 +3928,7 @@ html .footer__list-social.list-social, .footer__follow-on-shop, .footer-block__n
 }
 html .footer-block__heading .heroicons-solidplus {
     position: absolute;
-    right: 0;
+    right: 10px;
   display:none;
 }
 html  .footer-block--menu .heroicons-solidplus{
