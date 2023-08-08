@@ -3522,4 +3522,22 @@ details-disclosure > details {
         font-weight: 500;
         font-size: 18px;
         line height: 110%;
-    }}
+    }
+.banner__media {
+    display: none;
+}
+
+.slideshow .hidden {
+    display: block !important;
+}
+
+.site-banner-slider .slideshow__text-wrapper.banner__content {
+    position: absolute;
+    bottom: 0;
+    padding: 40px 10px;
+}
+
+.site-banner-slider .slideshow__text-wrapper.banner__content > div {
+    background: transparent;
+}
+}
