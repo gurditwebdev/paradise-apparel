@@ -1351,7 +1351,8 @@ if(window.location.href.includes('policies')){
 }
 $(".select__select").click(function () {
     let va = $(this).val();
-    $(`inpurt[type="radio"][value="${va}"]`).trigger('change');
+$(`inpurt[type="radio"][value="${va}"]`).attr('checked');    
+$(`inpurt[type="radio"][value="${va}"]`).trigger('change');
 })
 $("variant-radios input").click(function () {
     let va = $(this).val();
