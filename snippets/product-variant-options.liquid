@@ -62,12 +62,12 @@
     {% assign valuedfd = variant.options[0] %}
     {% unless values contains valuedfd %}
       {% assign values = values | join: ',' %}
-      {% assign values = values | append: ',' | append: value %} 
+      {% assign values = values | append: ',' | append: valuedfd %} 
       {% assign values = values | split: ',' %}
-<img src="{{ variant.image | img_url:"36X" }}"/>
+<img src="{{ variant.image | img_url:"360X" }}"/>
 {% endunless %}
 {% endfor %}
-      {{ value -}}
+
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
