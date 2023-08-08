@@ -3441,5 +3441,5 @@ details-disclosure > details {
     right: 10px;
 }
 .template--product details[open] .summary__title::before{
-    opacity:0;
+    opacity:0; 
 }
