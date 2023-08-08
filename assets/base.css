@@ -3966,7 +3966,7 @@ html .footer-bottom-wrapper-left ul {
 }
 
 html .footer-block__heading {
-    margin-bottom: 0;
+    margin-bottom: 0;max-width:100%;
 }
 
 html .footer__content-top .footer__blocks-wrapper .footer-block--menu {
