@@ -3944,7 +3944,7 @@ html .footer-block__details-content .list-menu__item--link {
     padding: 0;
 }
 
-html .footer-block__details-content {
+html .footer-block--menu .footer-block__details-content {
     display: none;
   margin:1.7rem 0 0;
 }
