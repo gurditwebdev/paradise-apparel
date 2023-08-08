@@ -3732,6 +3732,28 @@ align-items:center;
 .template--product details[open] .summary__title::before{
     opacity:0; 
 }
+span.heroicons-solidplus::before {
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: #070707;
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+    left: 5px;
+}
+span.heroicons-solidplus::after {
+    content: "";
+    width: 11px;
+    height: 1px;
+    background: #070707;
+    position: absolute;
+    border-radius: 5px;
+    top: 5px;
+}
+.active_tab span.heroicons-solidplus::before{
+    opacity:0;
+}
 @media only screen and (max-width:749px){
 .mb-display-xl-Medium {
         font-family: 'Helvetica Neue';
