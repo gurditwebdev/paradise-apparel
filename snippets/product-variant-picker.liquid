@@ -19,7 +19,6 @@
 {% endfor %}
 
 {%- unless product.has_only_default_variant -%}
-  {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
@@ -40,9 +39,7 @@
         {{ product.variants | json }}
       </script>
     </variant-radios>
-  {%- else -%}
-
-
+ 
 
     <variant-selects {{ option.name }}
       id="variant-selects-{{ section.id }}"
@@ -79,7 +76,6 @@
       </script>
     </variant-selects>
 
-  {%- endif -%}
 {%- endunless -%}
 
 <noscript class="product-form__noscript-wrapper-{{ section.id }}">
