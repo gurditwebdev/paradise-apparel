@@ -1242,7 +1242,7 @@ $(`.spring-0000 a[href="${window.location.pathname}"]`).addClass('active-link');
 
 
 if($(window).width() < 750){
-$(".footer-navigation h2").click(function(){
+$(".footer-block--menu h2").click(function(){
   $(this).parent("div").toggleClass("active_tab").siblings().removeClass("active_tab");
  $(this).next().slideToggle();
 $(this).parent("div").siblings().find("ul").slideUp();
