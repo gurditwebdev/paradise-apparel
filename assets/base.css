@@ -3323,3 +3323,6 @@ details-disclosure > details {
     --sparkle: url('./sparkle.gif');
   }
 }
+.variant-selects-Color,.variant-radios-Size {
+    display: none;
+}
