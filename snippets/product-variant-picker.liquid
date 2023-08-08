@@ -33,7 +33,7 @@
     </variant-radios>
   {%- else -%}
 
-{% if option.name == 'Color' or option.name == 'color' %}
+
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
@@ -54,7 +54,7 @@
         {{ product.variants | json }}
       </script>
     </variant-radios>
-{% else %}
+
     <variant-selects {{ option.name }}
       id="variant-selects-{{ section.id }}"
       class="no-js-hidden"
@@ -89,6 +89,8 @@
         {{ product.variants | json }}
       </script>
     </variant-selects>
+{% if option.name == 'Color' or option.name == 'color' %}
+{% else %}
 {% endif %}
   {%- endif -%}
 {%- endunless -%}
