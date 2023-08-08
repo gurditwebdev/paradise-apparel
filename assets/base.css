@@ -3351,3 +3351,95 @@ details-disclosure > details {
 .product-form__input label ~ label {
     margin-left: 16px !important;
 }
+
+
+
+.template--product .select-blank .product-form__submit {
+    background: #7D7D7D;
+}
+
+.template--product  .product-form__submit::after,.template--product  .product-form__submit::before {
+    display: none;
+}
+
+.template--product  .product-form__submit {
+    height: 41px;
+    min-height: 41px;
+}
+
+.template--product  .select-blank .product-form__submit span:first-child {
+    font-size: 0;
+}
+
+.template--product  .select-blank .product-form__submit span:first-child::before {
+    content: "Select Options";
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.template--product .product-form__input .select select {
+    appearance: none;
+}
+
+.template--product .product-form__input .select select + svg {
+    display: none;
+}
+.template--product
+.h4.accordion__title {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    text-transform: uppercase;
+}
+.template--product
+.product__accordion .accordion__content p {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+.template--product
+.product__accordion .accordion__content {
+    padding: 0;
+    overflow: visible;
+}
+.template--product
+.accordion__content table {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.template--product
+.accordion__content strong {
+    display: block;
+    margin: 8px 0;
+}
+.template--product
+.accordion .summary__title::before {
+    content: "";
+    width: 1px;
+    height: 11px;
+    background: #070707;
+    position: absolute;
+    border-radius: 5px;
+    top: 15px;
+    right: 15px;
+}
+.template--product .accordion .summary__title::after {
+    content: "";
+    width: 11px;
+    height: 1px;
+    background: #070707;
+    position: absolute;
+    border-radius: 5px;
+    top: 20px;
+    right: 10px;
+}
+.template--product details[open] .summary__title::before{
+    opacity:0;
+}
