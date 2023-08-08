@@ -3829,4 +3829,7 @@ align-items:center;
 .site-banner-slider .slideshow__text-wrapper.banner__content > div {
     background: transparent;
 }
+.page-width{
+    padding: 0 10px;
+}
 }
