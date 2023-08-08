@@ -3832,4 +3832,29 @@ align-items:center;
 .page-width{
     padding: 0 10px;
 }
+
+
+.header {
+    padding: 18px 10px !important;
+    display: flex;
+    gap: 16px;
+}
+
+.header__heading-link {
+    padding: 0;
+}
+
+header-drawer {
+    margin: 0;
+    order: 3;
+}
+
+.cart-count-bubble {
+    display: none !important;
+}
+
+h1.header__heading {
+    flex: 1;
+    text-align: left;
+}
 }
