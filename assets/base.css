@@ -3862,12 +3862,12 @@ html .header__heading-link
     flex: 1;
     text-align: left;
 }
-html ul#product-grid {
+html  ul#product-grid {
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
 }
 
-.collection .badge {
+html  .collection .badge {
     font-family: Helvetica Neue;
     font-size: 9.54px;
     font-style: normal;
@@ -3876,7 +3876,7 @@ html ul#product-grid {
     text-transform: uppercase;
 }
 
-.card--standard>.card__content .card__information {
+html .card--standard>.card__content .card__information {
     padding-bottom: 0;
 }
 
