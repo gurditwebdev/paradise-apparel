@@ -1208,15 +1208,15 @@ $(this).parents(".frame-wrapper1").siblings().find('.content').slideUp();
 $(this).parents(".frame-wrapper1").siblings().find('.content10').slideUp();
 });
 
-if($(".template--product .product-form__input .variant-selects-Size select").val() == 'blank'){
+if($(".variant-selects-Size select").val() == 'blank'){
 $("product-info").addClass('select-blank').removeClass('not-blank');
 }
-$(".template--product .product-form__input .variant-selects-Size select").on('change',function () {
-  if($(".template--product .product-form__input .variant-selects-Size select").val() != 'blank'){
+$("  .variant-selects-Size select").on('change',function () {
+  if($("  .variant-selects-Size select").val() != 'blank'){
 $("product-info").removeClass('select-blank').addClass('not-blank');
 }
   setTimeout(function () {
-    if($(".template--product .product-form__input .variant-selects-Size select").val() == 'blank'){
+    if($("  .variant-selects-Size select").val() == 'blank'){
 $(".template--product .product-form__submit span:first-child").text("Select A size");
 }
 
