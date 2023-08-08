@@ -1349,10 +1349,10 @@ $(".apply-filter span").text(len);
 if(window.location.href.includes('policies')){
   $('body').addClass('policies-template');
 }
-$(".variant-radios-Color").click(function () {
+$(".variant-selects-Size .select__select").click(function () {
     let va = $(this).val();
-$(`inpurt[type="radio"][value="${va}"]`).attr('checked');    
-$(`inpurt[type="radio"][value="${va}"]`).trigger('change');
+$(`.variant-radios-Size input[type="radio"][value="${va}"]`).attr('checked');    
+$(`.variant-radios-Size input[type="radio"][value="${va}"]`).trigger('change');
 })
 $("variant-radios input").click(function () {
     let va = $(this).val();
