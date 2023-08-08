@@ -3860,4 +3860,25 @@ h1.header__heading {
     flex: 1;
     text-align: left;
 }
+ul#product-grid {
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+}
+
+.collection .badge {
+    font-family: Helvetica Neue;
+    font-size: 9.54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 11.448px */
+    text-transform: uppercase;
+}
+
+.card--standard>.card__content .card__information {
+    padding-bottom: 0;
+}
+
+.price__container {
+    display: block;
+}
 }
