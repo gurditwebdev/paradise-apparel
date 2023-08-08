@@ -1349,3 +1349,11 @@ $(".apply-filter span").text(len);
 if(window.location.href.includes('policies')){
   $('body').addClass('policies-template');
 }
+$(".select__select").click(function () {
+    let va = $(this).val();
+    $(`inpurt[type="radio"][value="${va}"]`).trigger('change');
+})
+$("variant-radios input").click(function () {
+    let va = $(this).val();
+    $(`.select__select`).val(va).trigger('click');
+})
