@@ -226,13 +226,14 @@ cart-items {
 
 
 
-
+html
 .drawer__inner {
     max-width: 425px;
   width:100%;
     padding: 48px 24px;
     display: block;
-  
+  border: 0;
+    box-shadow: none;
 }
 
 h2.drawer__heading {
