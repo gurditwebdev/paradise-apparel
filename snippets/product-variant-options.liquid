@@ -60,6 +60,7 @@
   {% assign values = '' %}
   {% for variant in product.variants %}
     {% assign valuedfd = variant.options[0] %}
+{{ valuedfd }}
     {% unless values contains valuedfd %}
       {% assign values = values | join: ',' %}
       {% assign values = values | append: ',' | append: valuedfd %} 
