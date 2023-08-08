@@ -3883,4 +3883,7 @@ html .card--standard>.card__content .card__information {
 .price__container {
     display: block;
 }
+html .collection .card--media .card__inner .card__content {
+    padding: 12px 10px;
+}
 }
