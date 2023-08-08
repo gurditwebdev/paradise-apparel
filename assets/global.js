@@ -1349,7 +1349,7 @@ $(".apply-filter span").text(len);
 if(window.location.href.includes('policies')){
   $('body').addClass('policies-template');
 }
-$(".variant-selects-Size .select__select").click(function () {
+$(".variant-selects-Size .select__select").on("change",function () {
     let va = $(this).val();
 console.log(va);
 $(`.variant-radios-Size input[type="radio"][value="${va}"]`).attr('checked');    
