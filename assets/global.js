@@ -1358,5 +1358,5 @@ $(`.variant-radios-Size [value="${va}"]`).trigger('change');
 })
 $(".variant-selects-Size input").click(function () {
     let va = $(this).val();
-    $(`.select__select`).val(va).trigger('click');
+    $(`.variant-selects-Color .select__select`).val(va).trigger('click');
 })
