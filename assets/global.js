@@ -1351,7 +1351,8 @@ if(window.location.href.includes('policies')){
 }
 $(".variant-selects-Size .select__select").on("change",function () {
     let va = $(this).val();
-console.log(va);
+console.log(va,$(`.variant-radios-Size [value="${va}"]`).val());
+
 $(`.variant-radios-Size [value="${va}"]`).attr('checked');    
 $(`.variant-radios-Size [value="${va}"]`).trigger('change');
 })
