@@ -3924,6 +3924,7 @@ html .footer-block__details-content .list-menu__item--link {
 
 html .footer-block__details-content {
     display: none;
+  margin:1.7rem 0 0;
 }
 
 html .footer-bottom-wrapper {
