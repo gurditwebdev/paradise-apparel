@@ -37,9 +37,9 @@
 
 
 
-    <variant-selects {{ option.name }}
+    <variant-selects 
       id="variant-selects-{{ section.id }}"
-      class="no-js-hidden variant-selects-{{ option.name }}"
+      class="no-js-hidden "
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
@@ -48,7 +48,7 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <div class="product-form__input product-form__input--dropdown">
+        <div class="product-form__input product-form__input--dropdown variant-selects-{{ option.name }}">
           <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
             {{ option.name }}
           </label>
