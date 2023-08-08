@@ -4000,4 +4000,19 @@ html .footer__content-top .footer__blocks-wrapper .footer-block--menu h2::before
 html slider-component.page-width{
   padding:0 1.0rem;
 }
+html .footer-block:nth-child(4) {
+    margin: 0;
+    padding: 24px 0 0;
+}
+
+html .footer-block__details-content {margin-bottom: 0;}
+
+html .footer .grid {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+html .payment-icons {
+    margin: 19px  0;
+}
 }
