@@ -3904,7 +3904,10 @@ html .newsletter-form__field-wrapper .field {
 html .footer__list-social.list-social, .footer__follow-on-shop, .footer-block__newsletter {
     justify-content: flex-start;
 }
-
+html .footer-block__heading .heroicons-solidplus {
+    position: absolute;
+    right: 0;
+}
 html .footer__content-top.page-width {
     padding-left: 10px;
     padding-right: 10px;
