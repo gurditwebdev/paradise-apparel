@@ -1349,7 +1349,7 @@ $(".apply-filter span").text(len);
 if(window.location.href.includes('policies')){
   $('body').addClass('policies-template');
 }
-$(".select__select").click(function () {
+$(".variant-radios-Color").click(function () {
     let va = $(this).val();
 $(`inpurt[type="radio"][value="${va}"]`).attr('checked');    
 $(`inpurt[type="radio"][value="${va}"]`).trigger('change');
