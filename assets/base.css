@@ -3911,6 +3911,7 @@ html .footer-block__heading .heroicons-solidplus {
 }
 html  .footer-block--menu .heroicons-solidplus{
     display:block;
+top: 18px;
   }
 html .footer__content-top.page-width {
     padding-left: 10px;
