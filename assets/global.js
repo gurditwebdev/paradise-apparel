@@ -1358,6 +1358,8 @@ $(`.variant-radios-Size [value="${va}"]`).trigger('change');
 })
 $(".variant-radios-Color input").click(function () {
     let va = $(this).val();
+$(".variant-radios-Color .form__label span").text(va);
+
     $(`.variant-selects-Color .select__select`).val(va).trigger('click');
 $(`.variant-selects-Color .select__select`).val(va).trigger('change');
 })
