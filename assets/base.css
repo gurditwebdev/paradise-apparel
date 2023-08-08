@@ -3975,5 +3975,7 @@ html .footer__content-top .footer__blocks-wrapper .footer-block--menu h2::before
     left: -10px;
     width: calc(100% + 20px);
 }
-
+slider-component.page-width{
+  padding:0 1.0rem;
+}
 }
