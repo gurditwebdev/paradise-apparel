@@ -59,8 +59,8 @@
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
   {% assign values = '' %}
   {% for variant in product.variants %}
-    {% assign value = variant.options[0] %}
-    {% unless values contains value %}
+    {% assign valuedfd = variant.options[0] %}
+    {% unless values contains valuedfd %}
       {% assign values = values | join: ',' %}
       {% assign values = values | append: ',' | append: value %} 
       {% assign values = values | split: ',' %}
