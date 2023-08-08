@@ -3839,20 +3839,20 @@ html
     display: flex;
     gap: 16px;
 }
-
+html
 .header__heading-link {
     padding: 0;
 }
-
+html
 header-drawer {
     margin: 0;
     order: 3;
 }
-
+html
 .cart-count-bubble {
     display: none !important;
 }
-
+html
 h1.header__heading {
     flex: 1;
     text-align: left;
