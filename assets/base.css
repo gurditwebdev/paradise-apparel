@@ -3880,75 +3880,75 @@ html .card--standard>.card__content .card__information {
     padding-bottom: 0;
 }
 
-.price__container {
+html .price__container {
     display: block;
 }
 html .collection .card--media .card__inner .card__content {
     padding: 12px 10px;
 }
-.newsletter__wrapper {
+html .newsletter__wrapper {
     padding: 24px 10px;
     display: block;
 }
 
-.newsletter-form__button:not(:focus-visible):not(.focused), .newsletter-form__button {
+html .newsletter-form__button:not(:focus-visible):not(.focused), .newsletter-form__button {
     width: 100% !important;
     position: static;
     margin-top: 16px !important;
 }
 
-.newsletter-form__field-wrapper .field {
+html .newsletter-form__field-wrapper .field {
     display: block;
 }
 
-.footer__list-social.list-social, .footer__follow-on-shop, .footer-block__newsletter {
+html .footer__list-social.list-social, .footer__follow-on-shop, .footer-block__newsletter {
     justify-content: flex-start;
 }
 
-.footer__content-top.page-width {
+html.footer__content-top.page-width {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.footer-block__details-content .list-menu__item--link {
+html .footer-block__details-content .list-menu__item--link {
     padding: 0;
 }
 
-.footer-block__details-content {
+html .footer-block__details-content {
     display: none;
 }
 
-.footer-bottom-wrapper {
+html .footer-bottom-wrapper {
     flex-direction: column;
     padding: 24px 10px 40px;
     align-items: flex-start;
 }
 
-.footer-bottom-wrapper-left {
+html .footer-bottom-wrapper-left {
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
 }
 
-.footer-bottom-wrapper-left ul {
+html .footer-bottom-wrapper-left ul {
     margin-bottom: 16px;
 }
 
-.footer-block__heading {
+html .footer-block__heading {
     margin-bottom: 0;
 }
 
-.footer__content-top .footer__blocks-wrapper .footer-block--menu {
+html .footer__content-top .footer__blocks-wrapper .footer-block--menu {
     margin: 0;
     padding: 17px 0;
     position: relative;
 }
 
-.footer {
+html .footer {
     padding-top: 7px !IMPORTANT;
 }
 
-.footer__content-top .footer__blocks-wrapper .footer-block--menu::before {
+html .footer__content-top .footer__blocks-wrapper .footer-block--menu::before {
     content: "";
     position: absolute;
     width: calc(100% + 20px);
@@ -3958,7 +3958,7 @@ html .collection .card--media .card__inner .card__content {
     left: -10px;
 }
 
-.footer__content-top .footer__blocks-wrapper .footer-block--menu h2::before {
+html .footer__content-top .footer__blocks-wrapper .footer-block--menu h2::before {
     content: "";
     position: absolute;
     height: 48px;
