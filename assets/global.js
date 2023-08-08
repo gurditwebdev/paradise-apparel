@@ -1216,7 +1216,7 @@ $(".template-product .product-form__input .select select").on('change',function 
 $("product-info").removeClass('select-blank').addClass('not-blank');
 }
   setTimeout(function () {
-    if($(".template-product .product-form__input .select select").val() == 'blank'){
+    if($(".template-product .product-form__input .variant-selects-Size select").val() == 'blank'){
 $(".template-product .product-form__submit span:first-child").text("Select A size");
 }
 
