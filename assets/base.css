@@ -3852,6 +3852,9 @@ html
 .cart-count-bubble {
     display: none !important;
 }
+html .collection__view-all a:not(.link) {
+    margin: 0;
+}
 html
 h1.header__heading {
     flex: 1;
