@@ -1356,7 +1356,7 @@ console.log(va,$(`.variant-radios-Size [value="${va}"]`).val());
 $(`.variant-radios-Size [value="${va}"]`).prop('checked',true);    
 $(`.variant-radios-Size [value="${va}"]`).trigger('change');
 })
-$(".variant-selects-Size input").click(function () {
+$(".variant-radios-Color input").click(function () {
     let va = $(this).val();
     $(`.variant-selects-Color .select__select`).val(va).trigger('click');
 })
