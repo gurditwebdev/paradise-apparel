@@ -64,6 +64,7 @@
       {% assign values = values | join: ',' %}
       {% assign values = values | append: ',' | append: value %} 
       {% assign values = values | split: ',' %}
+<img src="{{ variant.image | img_url:"36X" }}"/>
 {% endunless %}
 {% endfor %}
       {{ value -}}
