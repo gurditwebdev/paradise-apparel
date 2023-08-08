@@ -3857,12 +3857,12 @@ html .collection__view-all a:not(.link) {
 }
 html
 .header__heading,
-html header__heading-link 
+html .header__heading-link 
  {
     flex: 1;
     text-align: left;
 }
-ul#product-grid {
+html ul#product-grid {
     grid-template-columns: repeat(2,1fr);
     gap: 16px;
 }
