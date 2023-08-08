@@ -3326,3 +3326,28 @@ details-disclosure > details {
 .variant-selects-Color,.variant-radios-Size {
     display: none;
 } 
+.variant-radios-Color label {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    width: 34.677px;
+    margin: 0 !important;
+    display: block;
+    cursor: pointer;
+}
+
+.variant-radios-Color  input {
+    display: none !important;
+}
+
+.variant-radios-Color label img {
+    width: 100%;
+}
+
+.product-form__input.variant-radios-Color {
+    display: flex;
+}
+
+.product-form__input label ~ label {
+    margin-left: 16px !important;
+}
