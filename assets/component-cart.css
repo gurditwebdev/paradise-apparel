@@ -228,10 +228,11 @@ cart-items {
 
 
 .drawer__inner {
-    width: 425px;
+    max-width: 425px;
+  width:100%;
     padding: 48px 24px;
     display: block;
-    max-width: 100%;
+  
 }
 
 h2.drawer__heading {
