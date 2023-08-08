@@ -60,12 +60,11 @@
   {% assign values = '' %}
   {% for variant in product.variants %}
     {% assign valuedfd = variant.options[0] %}
-{{ valuedfd }}
     {% unless values contains valuedfd %}
       {% assign values = values | join: ',' %}
       {% assign values = values | append: ',' | append: valuedfd %} 
       {% assign values = values | split: ',' %}
-<img src="{{ variant.image | img_url:"360X" }}"/>
+{% if value == valuedfd  %}<img src="{{ variant.image | img_url:"360X" }}"/> {% endif %}
 {% endunless %}
 {% endfor %}
 
