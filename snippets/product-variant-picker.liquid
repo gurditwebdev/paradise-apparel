@@ -9,16 +9,10 @@
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
-  {% assign values = '' %}
-  {% for  option in product.options_with_values %}
-    {% assign value = option.name %}
-    {% unless values contains value %}
-      {% assign values = values | join: ',' %}
-      {% assign values = values | append: ',' | append: value %} 
-{% endunless %}
-{% endfor %}
+ 
 
 {%- unless product.has_only_default_variant -%}
+  {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
       class="no-js-hidden"
@@ -39,7 +33,9 @@
         {{ product.variants | json }}
       </script>
     </variant-radios>
- 
+  {%- else -%}
+
+
 
     <variant-selects {{ option.name }}
       id="variant-selects-{{ section.id }}"
@@ -76,6 +72,7 @@
       </script>
     </variant-selects>
 
+  {%- endif -%}
 {%- endunless -%}
 
 <noscript class="product-form__noscript-wrapper-{{ section.id }}">
