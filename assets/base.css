@@ -4020,4 +4020,19 @@ html .footer .grid {
 html .payment-icons {
     margin: 19px  0;
 }
+.policies-template .shopify-policy__title {
+    margin: 80px 0 33px;
+}
+.policies-template
+.shopify-policy__body .rte strong {
+    margin-bottom: 16px;
+}
+
+.policies-template .newsletter {
+    margin-top: 77px;
+}
+
+.policies-template .rte hr:last-child {
+    display: none;
+}
 }
