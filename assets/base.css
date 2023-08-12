@@ -3754,6 +3754,9 @@ span.heroicons-solidplus::after {
 .active_tab span.heroicons-solidplus::before{
     opacity:0;
 }
+.heroicons-solidplus {
+    display: none;
+}
 @media only screen and (max-width:749px){
 .mb-display-xl-Medium {
         font-family: 'Helvetica Neue';
@@ -4011,7 +4014,9 @@ html .footer .grid {
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
+.heroicons-solidplus {
+    display: block;
+}
 html .payment-icons {
     margin: 19px  0;
 }
