@@ -476,10 +476,14 @@ button#CartDrawer-Checkout {
 html .drawer__inner {
     max-width: 314px;
     padding: 32px 10px;
+ overflow: auto;
 }
 
 .drawer__close {
     right: -3px;
 }
-  
+  div#CartDrawer {
+    margin-top: 32px;
+}
+
 }
