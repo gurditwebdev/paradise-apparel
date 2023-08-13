@@ -1214,13 +1214,13 @@ $("product-info").addClass('select-blank').removeClass('not-blank');
 
 $("  .variant-selects-Size select").on('change',function () {
   if($("  .variant-selects-Size select").val() != 'blank'){
-$("product-info").removeClass('select-blank').addClass('not-blank');
-$("product-info").removeClass('select-blank').removeClass('blank-enabled');
+$("product-info").addClass('not-blank');
+$("product-info").removeClass('select-blank');
 }
 
   setTimeout(function () {
     if($("  .variant-selects-Size select").val() == 'blank'){
-$("product-info").removeClass('select-blank').addClass('blank-enabled');
+$("product-info").addClass('select-blank');
 $(".template--product .product-form__submit span:first-child").text("Select Options");
 }
 
