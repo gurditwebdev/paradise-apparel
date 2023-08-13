@@ -4064,4 +4064,9 @@ html .payment-icons {
 .footer-block__details-content.rte {
     margin-left: 0;
 }
+  html
+.product__media-wrapper slider-component:not(.thumbnail-slider--no-slide) {
+    margin-left: -10px;
+    margin-right: -10px;
+}
 }
