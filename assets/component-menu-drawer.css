@@ -301,7 +301,7 @@ div#menu-drawer {
 .js .menu-drawer__submenu{
   border: 0;
 }
-.menu-drawer__navigation .menu-drawer__menu  > li {
+.menu-drawer__navigation > .menu-drawer__menu  > li {
     margin-bottom: 0;
     border-bottom: 1px solid #D0D0D0;
 }
