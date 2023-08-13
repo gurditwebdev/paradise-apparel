@@ -4054,5 +4054,7 @@ html .payment-icons {
 .frame-wrapper1:nth-child(2) .content10,.sort-filter-by {
     display: none;
 }
-
+.footer-block__details-content.rte {
+    margin-left: 0;
+}
 }
