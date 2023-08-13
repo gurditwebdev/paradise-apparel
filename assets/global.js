@@ -1372,6 +1372,9 @@ $(".frame-wrapper1:not(:first-child) .frame-parent1").each(function () {
 $(".menu-drawer__close-button").click(function (e) {
   e.preventDefault();
    $(this).parents('.menu-drawer__menu').find('details').removeClass('menu-opening');
-// .removeAttr('open')
+setTimeout(function () {
+  $(this).parents('.menu-drawer__menu').find('details').removeAttr('open')
+},350);
+
   $(this).parents('.menu-drawer__menu').removeClass('submenu-open');
 })
