@@ -4039,16 +4039,4 @@ html .payment-icons {
     display: none;
 }
 
-.template--product .product {
-    gap: 30px;
-    justify-content: space-between;
-}
-
-.product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: calc(100% - 400px);
-}
-
-media-gallery .product__media-list {
-    gap: 10px;
-}
 }
