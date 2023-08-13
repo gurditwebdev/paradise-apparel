@@ -893,11 +893,10 @@ class VariantSelects extends HTMLElement {
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
     this.removeErrorMessage();
-    this.updateVariantStatuses();
-console.log(this.updateOptions(),this.setUnavailable());
+
     if (!this.currentVariant) {
       this.toggleAddButton(true, '', true);
-      this.setUnavailable();
+      // this.setUnavailable();
     } else {
       this.updateMedia();
       this.updateURL();
