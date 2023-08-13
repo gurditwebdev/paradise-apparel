@@ -1221,6 +1221,7 @@ $("product-info").removeClass('select-blank');
   setTimeout(function () {
     if($("  .variant-selects-Size select").val() == 'blank'){
 $("product-info").addClass('select-blank');
+$("product-info").removeClass('not-blank');
 $(".template--product .product-form__submit span:first-child").text("Select Options");
 }
 
