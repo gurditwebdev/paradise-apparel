@@ -627,6 +627,7 @@ line-height:120%;
 }
 }
 @media only screen and (max-width:768px){
+  .template--product .product-form__input,
 .template--product .product__info-wrapper {
     max-width: 100% !important;
 }
