@@ -35,6 +35,7 @@
         "100b6ef9-c14d-4e11-86f3-8fe84dce6e1a": {
           "type": "collapsible_tab",
           "settings": {
+            "open": true,
             "heading": "DETAILS",
             "icon": "none",
             "content": "<p>Paradise Apparel<br\/><br\/>Lorem ipsum dolor sit ametl.<br\/><br\/>- Lorem ipsum dolor sit amet<br\/> - Lorem ipsum dolor sit amet <br\/>- Lorem ipsum dolor sit amet<br\/> - Lorem ipsum dolor sit amet<br\/> - Lorem ipsum dolor sit amet<br\/><br\/>The model is 184 cm and wears a size 48. 100% Cotton <br\/>Made in Lorem ipsum <br\/>Ref. 00000-0000-000-0<\/p>",
@@ -44,6 +45,7 @@
         "e831f7bb-cb71-4f53-8410-22d531b67f22": {
           "type": "collapsible_tab",
           "settings": {
+            "open": false,
             "heading": "SIZE",
             "icon": "none",
             "content": "",
@@ -53,6 +55,7 @@
         "0dfaf563-c24e-4a07-a46e-dd5f2284ebd8": {
           "type": "collapsible_tab",
           "settings": {
+            "open": false,
             "heading": "DELIVERY AND RETURNS",
             "icon": "none",
             "content": "",
