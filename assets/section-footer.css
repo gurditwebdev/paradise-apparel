@@ -626,3 +626,8 @@ line-height:120%;
     max-width: 320px !important;
 }
 }
+@media only screen and (max-width:768px){
+.template--product .product__info-wrapper {
+    max-width: 100% !important;
+}
+}
