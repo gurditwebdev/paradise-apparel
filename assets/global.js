@@ -1379,3 +1379,8 @@ setTimeout(function () {
 
   $(this).parents('.menu-drawer__menu').removeClass('submenu-open');
 })
+
+if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) 
+{
+ $('body').addClass('safari-active')
+}
