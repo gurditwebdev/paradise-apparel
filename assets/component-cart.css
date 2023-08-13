@@ -472,3 +472,14 @@ button#CartDrawer-Checkout {
     justify-content: space-between;
   margin-bottom:24px;
 }
+@media only screen and (max-width:768px){
+html .drawer__inner {
+    max-width: 314px;
+    padding: 32px 10px;
+}
+
+.drawer__close {
+    right: -3px;
+}
+  
+}
