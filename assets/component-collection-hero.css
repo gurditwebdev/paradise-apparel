@@ -580,3 +580,15 @@ span.heroicons-solidplus::after {
 .frame-parent4 {
     margin-top: 68px;
 }
+
+@media only screen and (max-width:768px){
+.desktop-filter-menu {
+    padding: 48px 10px 43px 10px;
+    max-width: 310px;
+    justify-content: space-between;
+}
+
+.frame-parent {
+    gap: 41px;
+}
+}
