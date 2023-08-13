@@ -382,3 +382,7 @@ div#menu-drawer {
 .menu-drawer__inner-container {
     transform: translateX(100%);
 }
+.no-js details[open]>.menu-drawer .menu-drawer__inner-container, .js details[open].menu-opening>.menu-drawer .menu-drawer__inner-container, details[open].menu-opening>.menu-drawer__submenu .menu-drawer__inner-container{
+  transform: translate(0);
+    transition: transform var(--duration-default) ease,visibility var(--duration-default) ease;
+}
