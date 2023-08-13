@@ -344,6 +344,7 @@ div#menu-drawer {
 .menu-drawer__inner-submenu > div {
     display: flex;
     margin-bottom: 51px;
+    justify-content: space-between;
 }
 
 .menu-drawer summary.menu-drawer__menu-item svg {
