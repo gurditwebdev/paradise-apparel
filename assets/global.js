@@ -1369,3 +1369,7 @@ $(`.variant-selects-Color .select__select`).val(va).trigger('change');
 $(".frame-wrapper1:not(:first-child) .frame-parent1").each(function () {
     $(this).removeClass('active_tab');
 })
+$(".menu-drawer__close-button").click(function (e) {
+  e.preventDefault();
+  
+})
