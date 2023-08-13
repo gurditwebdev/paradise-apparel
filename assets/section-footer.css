@@ -613,3 +613,8 @@ line-height:120%;
     border-top: 0;
     position: relative;
 }
+@media only screen and (max-width:768px){
+html .footer__blocks-wrapper.flex {
+    gap: 100px;
+}
+}
