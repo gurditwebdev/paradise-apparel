@@ -419,11 +419,11 @@ button#CartDrawer-Checkout {
     margin: 0;
 }
 
-.cart-drawer .cart-item:nth-child(odd) {
+.cart-drawer .cart-item:nth-child(1) {
     padding-bottom: 16px;
 }
 
-.cart-drawer .cart-item:nth-child(even) {
+.cart-drawer .cart-item + .cart-item {
     padding-top: 24px;
     padding-bottom: 16px;
 }
