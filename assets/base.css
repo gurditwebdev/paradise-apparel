@@ -3757,6 +3757,22 @@ span.heroicons-solidplus::after {
 .heroicons-solidplus {
     display: none;
 }
+
+@media only screen and (max-width:1366px){
+.template--product .product {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.product--large:not(.product--no-media) .product__media-wrapper {
+    max-width: calc(100% - 400px);
+}
+
+media-gallery .product__media-list {
+    gap: 10px;
+}
+}
+
 @media only screen and (max-width:749px){
 .mb-display-xl-Medium {
         font-family: 'Helvetica Neue';
