@@ -379,3 +379,6 @@ div#menu-drawer {
 #link-shop-all > div > ul.menu-drawer__menu.list-menu > li:nth-child(2) {
     padding-bottom: 2px;
 }
+.menu-drawer__inner-container {
+    transform: translateX(100%);
+}
