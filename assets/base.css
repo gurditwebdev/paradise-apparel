@@ -134,7 +134,14 @@ body:has(.section-header .drawer-menu) .announcement-bar-section slideshow-compo
     padding: 0 5rem;
   }
 }
-
+h1 {
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+}
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
     padding-left: 5rem;
