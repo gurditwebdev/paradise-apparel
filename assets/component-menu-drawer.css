@@ -312,3 +312,16 @@ div#menu-drawer {
 .menu-drawer__navigation {
     padding: 48px 0;
 }
+.menu-drawer__navigation-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+    color: #070707;
+    margin-bottom: 24px;
+}
