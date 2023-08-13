@@ -43,6 +43,7 @@
                         tabindex="-1"
                       >
                         <div class="menu-drawer__inner-submenu">
+                          <div>
                           <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                             <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_258_939" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="17">
@@ -54,7 +55,13 @@
 </svg>
 
                             {{ link.title | escape }}
+
                           </button>
+<button><svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.96967C5.76256 5.67678 6.23744 5.67678 6.53033 5.96967L12 11.4393L17.4697 5.96967C17.7626 5.67678 18.2374 5.67678 18.5303 5.96967C18.8232 6.26256 18.8232 6.73744 18.5303 7.03033L13.0607 12.5L18.5303 17.9697C18.8232 18.2626 18.8232 18.7374 18.5303 19.0303C18.2374 19.3232 17.7626 19.3232 17.4697 19.0303L12 13.5607L6.53033 19.0303C6.23744 19.3232 5.76256 19.3232 5.46967 19.0303C5.17678 18.7374 5.17678 18.2626 5.46967 17.9697L10.9393 12.5L5.46967 7.03033C5.17678 6.73744 5.17678 6.26256 5.46967 5.96967Z" fill="#0F172A"/>
+</svg>
+</button>
+</div>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
