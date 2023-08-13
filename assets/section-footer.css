@@ -618,3 +618,11 @@ line-height:120%;
     gap: 100px;
 }
 }
+@media only screen and (max-width:991px){
+.footer__blocks-wrapper.flex{
+  gap:50px;
+}
+.template--product .product__info-wrapper {
+    max-width: 320px !important;
+}
+}
