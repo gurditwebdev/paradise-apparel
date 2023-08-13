@@ -1370,7 +1370,6 @@ $(".frame-wrapper1:not(:first-child) .frame-parent1").each(function () {
     $(this).removeClass('active_tab');
 })
 $(".menu-drawer__close-button").click(function (e) {
-  e.preventDefault();
-  $(this).parents('details').removeAttr('open').removeClass('.menu-opening');
+    $(this).parents('details').removeAttr('open').removeClass('.menu-opening');
   $(this).parents('.menu-drawer__menu').removeClass('submenu-open');
 })
