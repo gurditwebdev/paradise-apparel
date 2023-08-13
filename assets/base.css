@@ -4038,9 +4038,6 @@ html .payment-icons {
 .frame-wrapper1:nth-child(2) .content10,.sort-filter-by {
     display: none;
 }
-html .footer__blocks-wrapper.flex {
-    gap: 100px;
-}
 
 .template--product .product {
     gap: 30px;
