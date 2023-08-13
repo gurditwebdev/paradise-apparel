@@ -4035,25 +4035,5 @@ html .payment-icons {
 .policies-template .rte hr:last-child {
     display: none;
 }
-.template--page main#MainContent {
-    margin-top: 49px;
-    margin-bottom: 88px;
-}
 
-.template--page .newsletter.mt-\[105px\].center {
-    margin-top: 0;
-}
-.template--page .rte, .template--page .rte div{
-        font-size: 12px;
-}
-.template--page .page-width .rte>div+div {
-    margin-top: 20px;
-}
-
-.template--page main#MainContent .page-width {padding: 0 26px !important;}
-
-.template--page .page-width .rte>div img {
-    margin-top: 34px;
-    margin-bottom: 0;
-}
 }
