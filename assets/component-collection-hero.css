@@ -587,6 +587,7 @@ span.heroicons-solidplus::after {
     max-width: 310px;
     justify-content: space-between;
 margin-top: 32px;
+max-height: calc(100vh - 32px);
 }
 .frame-parent4 {
     margin-top: 0;
