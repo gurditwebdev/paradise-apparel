@@ -112,7 +112,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .js .menu-drawer__menu li {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0rem;
 }
 
 .menu-drawer__menu-item {
@@ -301,7 +301,7 @@ div#menu-drawer {
 .js .menu-drawer__submenu{
   border: 0;
 }
-.menu-drawer__navigation li {
+.menu-drawer__navigation .menu-drawer__menu  > li {
     margin-bottom: 0;
     border-bottom: 1px solid #D0D0D0;
 }
