@@ -264,3 +264,46 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer .list-social__link {
   padding: 1.3rem 1.25rem;
 }
+div#menu-drawer {
+    top: 0;
+    height: 100vh;
+    left: auto;
+    right: 0;
+    background: rgba(7, 7, 7, 0.5);
+    width: 100%;
+    border: 0;
+}
+
+.menu-drawer__inner-container {
+    background: #fff;
+    max-width: 320px;
+    margin: 0 0 0 auto;
+    padding: 0 10px;
+}
+
+.header--has-social .menu-drawer__utility-links {
+    display: none;
+}
+
+.list-menu__item {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: #070707;
+    padding: 16px  0;
+}
+
+.menu-drawer__menu-item--active, .menu-drawer__menu-item:focus, .menu-drawer__close-button:focus, .menu-drawer__menu-item:hover, .menu-drawer__close-button:hover {
+    background: transparent;
+}
+
+.menu-drawer__navigation li {
+    margin-bottom: 0;
+    border-bottom: 1px solid #D0D0D0;
+}
+
+.menu-drawer__navigation {
+    padding: 48px 0;
+}
