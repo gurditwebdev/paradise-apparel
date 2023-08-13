@@ -1219,7 +1219,7 @@ $("product-info").removeClass('select-blank').addClass('not-blank');
 
   setTimeout(function () {
     if($("  .variant-selects-Size select").val() == 'blank'){
-$(".template--product .product-form__submit span:first-child").text("Select A size");
+$(".template--product .product-form__submit span:first-child").text("Select Options");
 }
 
   },
