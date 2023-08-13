@@ -4035,5 +4035,23 @@ html .payment-icons {
 .policies-template .rte hr:last-child {
     display: none;
 }
+.frame-wrapper1:nth-child(2) .content10,.sort-filter-by {
+    display: none;
+}
+html .footer__blocks-wrapper.flex {
+    gap: 100px;
+}
 
+.template--product .product {
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.product--large:not(.product--no-media) .product__media-wrapper {
+    max-width: calc(100% - 400px);
+}
+
+media-gallery .product__media-list {
+    gap: 10px;
+}
 }
