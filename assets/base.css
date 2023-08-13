@@ -3779,14 +3779,7 @@ media-gallery .product__media-list {
     gap: 10px;
 }
 }
-/* @media only screen and (max-width:991px){
-.footer__blocks-wrapper.flex{
-  gap:50px;
-}
-.template--product .product__info-wrapper {
-    max-width: 320px !important;
-}
-} */
+
 @media only screen and (max-width:749px){
 .mb-display-xl-Medium {
         font-family: 'Helvetica Neue';
