@@ -1363,3 +1363,6 @@ $(".variant-radios-Color .form__label span").text(va);
     $(`.variant-selects-Color .select__select`).val(va).trigger('click');
 $(`.variant-selects-Color .select__select`).val(va).trigger('change');
 })
+$(".frame-wrapper1:not(:first-child) .frame-parent1").each(function () {
+    $(this).removeClass('active_tab');
+})
