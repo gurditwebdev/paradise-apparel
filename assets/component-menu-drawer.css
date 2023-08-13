@@ -325,3 +325,57 @@ div#menu-drawer {
     color: #070707;
     margin-bottom: 24px;
 }
+.menu-drawer__close-button {
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 21.6px */
+    text-transform: uppercase;
+}
+
+.menu-drawer__inner-submenu {
+    padding: 48px 10px 32px;
+}
+
+.menu-drawer__inner-submenu > div {
+    display: flex;
+    margin-bottom: 51px;
+}
+
+.menu-drawer summary.menu-drawer__menu-item svg {
+    width: 16px;
+    height: 16px;
+}
+
+#link-shop-all > div> ul.menu-drawer__menu.list-menu > li:nth-child(1) {
+    display: none;
+}
+
+#link-shop-all ul.menu-drawer__menu.list-menu > li:nth-child(2) summary, #link-shop-all > div >  ul.menu-drawer__menu.list-menu > li:nth-child(2) a {
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 13.2px */
+    text-transform: uppercase;
+    padding: 6px 0;
+}
+
+#link-shop-all > div > ul.menu-drawer__menu.list-menu > li:nth-child(3) .list-menu__item {
+    padding: 6px 0;
+    font-family: Helvetica Neue;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    text-transform: uppercase;
+    color: #7d7d7d;
+}
+
+#link-shop-all > div > ul.menu-drawer__menu.list-menu > li:nth-child(2) {
+    padding-bottom: 2px;
+}
