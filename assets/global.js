@@ -1210,11 +1210,15 @@ $(this).parents(".frame-wrapper1").siblings().find('.content10').slideUp();
 
 if($(".variant-selects-Size select").val() == 'blank'){
 $("product-info").addClass('select-blank').removeClass('not-blank');
+$("product-info").addClass('select-blank').addClass('blank-value');
 }
+
 $("  .variant-selects-Size select").on('change',function () {
   if($("  .variant-selects-Size select").val() != 'blank'){
 $("product-info").removeClass('select-blank').addClass('not-blank');
+$("product-info").addClass('select-blank').removeClass('blank-value');
 }
+
   setTimeout(function () {
     if($("  .variant-selects-Size select").val() == 'blank'){
 $(".template--product .product-form__submit span:first-child").text("Select A size");
