@@ -888,7 +888,7 @@ class VariantSelects extends HTMLElement {
   }
 
   onVariantChange() {
-    this.updateOptions();
+ //   this.updateOptions();
     this.updateMasterId();
     this.toggleAddButton(true, '', false);
     this.updatePickupAvailability();
