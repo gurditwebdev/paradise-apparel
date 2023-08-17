@@ -517,6 +517,7 @@ html summary.list-menu__item {
 
     hide() {
       if (this.headerIsAlwaysSticky) return;
+      document.body.classList.add('shopify-header-sticky');
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
       this.closeMenuDisclosure();
       this.closeSearchModal();
