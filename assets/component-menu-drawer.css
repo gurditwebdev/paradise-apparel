@@ -303,7 +303,6 @@ div#menu-drawer {
 }
 .menu-drawer__navigation > .menu-drawer__menu  > li {
     margin-bottom: 0;
-position:relative;
     border-bottom: 0px solid #D0D0D0;
 }
 .menu-drawer__navigation > .menu-drawer__menu  > li::after{
