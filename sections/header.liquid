@@ -524,6 +524,7 @@ html summary.list-menu__item {
 
     reveal() {
       if (this.headerIsAlwaysSticky) return;
+      document.body.classList.add('shopify-header-sticky');
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
     }
@@ -531,6 +532,7 @@ html summary.list-menu__item {
     reset() {
       if (this.headerIsAlwaysSticky) return;
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+      document.body.classList.remove('shopify-header-sticky')
     }
 
     closeMenuDisclosure() {
