@@ -27,6 +27,7 @@
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
                 <li>
+
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                       <summary
@@ -103,6 +104,7 @@
                         </div>
                       </div>
                     </details>
+<span></span>
                   {%- else -%}
                     <a
                       id="HeaderDrawer-{{ link.handle }}"
