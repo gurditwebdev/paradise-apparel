@@ -1384,6 +1384,9 @@ if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chr
 {
  $('body').addClass('safari-active')
 }
+$("#CartDrawer-Overlay").click(function () {
+    $(".header__icon--menu").trigger('click');
+})
 $("#menu-drawer").click(function () {
     $(".header__icon--menu").trigger('click');
 })
